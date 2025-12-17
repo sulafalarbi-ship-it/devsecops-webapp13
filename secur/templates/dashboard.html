@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Welcome, {{ user['username'] }}</h2>
+
+<form method="POST">
+  <label>About You:</label><br>
+  <textarea name="about" rows="4" cols="40">{{ user['about'] }}</textarea><br><br>
+
+  <button type="submit">Save</button>
+</form>
+
+<a href="{{ url_for('logout') }}">Logout</a>
+
+{% endblock %}
