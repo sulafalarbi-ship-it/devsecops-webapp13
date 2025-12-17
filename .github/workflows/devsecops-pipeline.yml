@@ -19,10 +19,9 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
+        run: echo "No dependencies to install, skipping ✅"
           python -m pip install --upgrade pip
-          - name: Install dependencies
-          run: echo "No dependencies to install, skipping ✅"
+      
 
 
       - name: Run unit tests
